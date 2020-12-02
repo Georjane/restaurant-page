@@ -1,3 +1,41 @@
 body {
   background-color: rgb(216, 44, 59);
+  color: rgb(255, 255, 254);
+  font-size: 32px;
+}
+ul {
+  display: flex;
+  list-style: none;
+  width: 30%;
+  margin: auto;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: large;
+  border-bottom: yellow dotted 4px;
+}
+
+main {
+  width: 90vw;
+  height: 80vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 20px;
+}
+
+.image {
+  width: 50vw;
+  align-self: center;
+}
+
+.description {
+  width: 40vw;
+  padding: 20px;
+}
+
+p {
+  color: rgb(252, 206, 2);
 }
