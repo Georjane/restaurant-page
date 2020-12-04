@@ -9,6 +9,9 @@ We made use of the following:
 ## Restaurant Screenshot
 ![](assets/screenshot.png)
 
+## Live Link
+- [here](https://nostalgic-mcclintock-2e76f2.netlify.app/)
+
 ## Built With
 - HTML
 - JavaScript
