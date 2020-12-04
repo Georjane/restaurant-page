@@ -2,31 +2,33 @@ import home from './home';
 import nav from './nav'
 import menu from './menu'
 import contact from './contact'
+import clear from './clear'
 import './style.css';
 
 tabs.appendChild(nav());
 home();
 
-const container = document.querySelector('div#content');
-const wipe = () => {
-  container.innerHTML = '';
-}
-// // Home tab
 let homeBtn = document.getElementById('home');
 homeBtn.onclick = () => {
-  home();
+  homeBtn.classList.add('disabledTab')
+  menuBtn.classList.remove('disabledTab')
+  contactBtn.classList.remove('disabledTab')
+  
 };
 
-// Menu tab
 let menuBtn = document.getElementById('menu');
 menuBtn.onclick = () => {
-
+  homeBtn.classList.remove('disabledTab')
+  menuBtn.classList.add('disabledTab')
+  contactBtn.classList.remove('disabledTab')
   menu();
 };
 
-// contact tab
 let contactBtn = document.getElementById('contact');
 contactBtn.onclick = () => {
-  wipe();
+  
+  homeBtn.classList.remove('disabledTab')
+  menuBtn.classList.remove('disabledTab')
+  contactBtn.classList.add('disabledTab')
   contact();
 };

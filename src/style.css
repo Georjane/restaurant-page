@@ -66,67 +66,36 @@ textarea:focus,
 select:focus {
 outline: none; }
 
-.tabs {
-display: block;
-display: -webkit-flex;
-display: -moz-flex;
-display: flex;
--webkit-flex-wrap: wrap;
--moz-flex-wrap: wrap;
-flex-wrap: wrap;
-margin: 0;
-overflow: hidden; }
-.tabs [class^="tab"] label,
-.tabs [class*=" tab"] label {
-  color: #efedef;
-  cursor: pointer;
-  display: block;
-  font-size: 1.1em;
-  font-weight: 300;
-  line-height: 1em;
-  padding: 2rem 0;
-  text-align: center; }
-.tabs [class^="tab"] [type="radio"],
-.tabs [class*=" tab"] [type="radio"] {
-  border-bottom: 1px solid rgba(239, 237, 239, 0.5);
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: block;
-  width: 100%;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-  .tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
-  .tabs [class*=" tab"] [type="radio"]:hover,
-  .tabs [class*=" tab"] [type="radio"]:focus {
-    border-bottom: 1px solid #fd264f; }
-  .tabs [class^="tab"] [type="radio"]:checked,
-  .tabs [class*=" tab"] [type="radio"]:checked {
-    border-bottom: 2px solid #fd264f; }
-  .tabs [class^="tab"] [type="radio"]:checked + div,
-  .tabs [class*=" tab"] [type="radio"]:checked + div {
-    opacity: 1; }
-  .tabs [class^="tab"] [type="radio"] + div,
-  .tabs [class*=" tab"] [type="radio"] + div {
-    display: block;
-    opacity: 0;
-    padding: 2rem 0;
-    width: 90%;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
-.tabs .tab-2 {
-  width: 50%; }
-  .tabs .tab-2 [type="radio"] + div {
-    width: 200%;
-    margin-left: 200%; }
-  .tabs .tab-2 [type="radio"]:checked + div {
-    margin-left: 0; }
-  .tabs .tab-2:last-child [type="radio"] + div {
-    margin-left: 100%; }
-  .tabs .tab-2:last-child [type="radio"]:checked + div {
-    margin-left: -100%; }
+#navbar {
+  display: flex;
+  width: 60%;
+  height: fit-content;
+  padding: 10px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+  .tab {
+    background-color: rgba(36, 34, 28, 0.52);
+    color: white;
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 0.2em;
+    padding: 1rem;
+    text-align: center;
+    border: none;
+    border-bottom: 3px solid rgba(239, 237, 239, 0.5);
+    cursor: pointer;
+    appearance: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .tab:hover, .tab:focus {
+    border-bottom: 3px solid #fd264f;
+  }
+
+  .disabledTab{
+    pointer-events: none;
+}
