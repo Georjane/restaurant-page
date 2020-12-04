@@ -1,7 +1,7 @@
-# restaurant-page
+# Restaurant-page
 In this project, we continue practicing DOM manipulation by dynamically rendering a simple restaurant homepage.DOM elements were created using JavaScript but styling was done in a separate CSS file.
 The project has a menu and contact page too.
- We made use of the following:
+We made use of the following:
 
 - DOM Manipulation with JavaScript
 - Use of JavaScript functions
