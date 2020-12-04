@@ -1,12 +1,12 @@
-const tabs = document.querySelector('div#tabs')
+const tabs = document.querySelector('div#tabs');
 
 const nav = () => {
   const navbar = document.createElement('nav');
-  navbar.id = "navbar";
+  navbar.id = 'navbar';
   const home = document.createElement('button');
   home.innerHTML = 'Home';
   home.id = 'home';
-  home.classList= 'tab';
+  home.classList = 'tab';
   const menu = document.createElement('button');
   menu.innerHTML = 'Menu';
   menu.classList = 'tab';
