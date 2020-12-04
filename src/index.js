@@ -1,14 +1,16 @@
-import restaurant from './home';
+import home from './home';
+import nav from './nav'
 import './style.css';
 
-console.log('Hi Jane, we love JS!!')
+tabs.appendChild(nav());
+home();
 
-  // const element = document.querySelector('div#content');
-  // element.appendChild(restaurant());
-  // console.log(restaurant());
-  // restaurant().forEach(element => {
-  // console.log(element);
-    
-  // });
-  restaurant()
+// // Home tab
+// let homeBtn = document.getElementById('home');
+// homeBtn.onclick = () => {
+// const main = getElementById('main')
 
+//   // clear();
+//   main.innerHTML = '';
+//   home;
+// };
