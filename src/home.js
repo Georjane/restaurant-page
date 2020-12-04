@@ -4,6 +4,7 @@ main.id = 'main'
 
 
 const home = () => {
+  container.innerHTML = '';
 
   const list = document.createElement('ul');
   const listItem1 = document.createElement('li');
@@ -25,9 +26,11 @@ const home = () => {
   description.appendChild(restoAbout)
   main.appendChild(image)
   main.appendChild(description)
+  container.appendChild(main);
+
 }
 
-container.appendChild(main);
+// container.appendChild(main);
 
 
 export default home

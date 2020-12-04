@@ -1,16 +1,20 @@
 import home from './home';
 import nav from './nav'
+import menu from './menu'
 import './style.css';
 
 tabs.appendChild(nav());
 home();
 
 // // Home tab
-// let homeBtn = document.getElementById('home');
-// homeBtn.onclick = () => {
-// const main = getElementById('main')
+let homeBtn = document.getElementById('home');
+homeBtn.onclick = () => {
+  home();
+};
 
-//   // clear();
-//   main.innerHTML = '';
-//   home;
-// };
+// // Menu tab
+let menuBtn = document.getElementById('menu');
+menuBtn.onclick = () => {
+
+  menu();
+};
