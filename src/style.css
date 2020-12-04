@@ -1,0 +1,100 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./restaurant.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 254);
+  font-size: 32px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  width: 30%;
+  margin: auto;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: large;
+  border-bottom: yellow dotted 4px;
+}
+
+main {
+  width: 90vw;
+  height: 80vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+img {
+  width: 50vw;
+  align-self: center;
+}
+
+.description {
+  width: 40vw;
+  padding: 20px;
+}
+
+p {
+  color: rgb(252, 206, 2);
+}
+
+a {
+  background: #fd264f;
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  line-height: 1em;
+  margin: 0;
+  padding: 5px 110px;
+  position: fixed;
+  top: 20px;
+  right: -100px;
+  text-align: center;
+  text-decoration: none;
+  transform: rotate(45deg);
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+#navbar {
+  display: flex;
+  width: 60%;
+  padding: 10px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tab {
+  background-color: rgba(36, 34, 28, 0.52);
+  color: white;
+  cursor: pointer;
+  font-size: 0.8em;
+  font-weight: 300;
+  line-height: 0.2em;
+  padding: 1rem;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid rgba(239, 237, 239, 0.5);
+  appearance: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.tab:hover,
+.tab:focus {
+  border-bottom: 3px solid #fd264f;
+}
+
+.disabledTab {
+  pointer-events: none;
+}
